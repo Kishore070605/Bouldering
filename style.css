@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: #150202;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.wrapper{
+    max-inline-size:1000px;
+    margin-inline: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+}
+
+.primary-nav a{
+    display: flex;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+span{
+    color: #189193;
+}
+
+img{
+    display: block;
+    max-inline-size: 100%;
+}
+
+h2{
+    color: #189193;
+}
+
+.two-colunm-layout{
+    margin-block: 30px;
+    display: grid;
+    gap: 30px;
+    @media(width > 720px){
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+}
+
+.group-para{
+    background-color: #189193;
+    padding: 10px;
+    color: #fff;
+    border: 5px #000 solid;
+    margin-block-end: 20px;
+}
+
+.bg-image{
+    background-image: url(image/simple-steps.jpg);
+    background-repeat: no-repeat;
+    padding: 20px;
+    width: 500px;
+    background-position: top;
+    background-size: cover;
+    color: #fff;
+    margin-block-end: 30px;
+}
+
+
+footer p{
+    background-color: #189193;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    border: 5px #000 solid;
+}
